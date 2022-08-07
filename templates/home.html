@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>ASL</title>
+</head>
+<style>
+    .topnav {
+background-color: rgb(23, 224, 238);
+overflow: hidden;
+min-height: 50px;
+font-size: 20px;
+color:#4c134e;
+}
+  body,html{
+    height:100%;
+   
+  }
+  .bg
+  {
+   position: absolute;
+   z-index: -1;
+    /* background-repeat: no-repeat;
+
+    background-image: url('https://www.stillmantranslations.com/wp-content/uploads/2020/07/asl-getty-images.jpg');
+     background-size : cover ;
+     background-position: center; */
+    width:100%;
+/* height: 100%; */
+  }
+  
+  img{
+      width: 98%;
+      margin-top: 190px;
+  }
+  </style>
+<body>
+
+  
+    <div class="bg"><img src='https://www.stillmantranslations.com/wp-content/uploads/2020/07/asl-getty-images.jpg'></div>
+    <h1 class="c1">Welcome to ASL detection website </h1>
+    <h2>It is a place where people who think they are born without somethings to rethink that we are there to give those</h2>
+
+     
+    
+
+          <form method = "post" enctype="multipart/form-data">
+                 {% csrf_token %}
+                 {{ form.as_p }}
+                 <button type="submit"> Upload  </button>
+          </form>
+
+
+         
+
+
+
+
+    <div class="topnav">
+        <div class="container">
+          <div class="topnav">
+            <a href="./"><button type="button">Home</button></a>
+            <a href="./"><button type="button">Camera </button></a>
+            <a href="./"><button type="button">Save</button></a>
+            <a href="./"><button type="button">Submit</button></a>
+          </div>
+        </div>
+      </div>
+
+      <div class="camera">
+        <video id="video">Video stream not available.</video>
+        <button id="startbutton">Take photo</button>
+      </div>
+
+    
+
+</body>
+</html>
